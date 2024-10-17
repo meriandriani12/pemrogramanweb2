@@ -23,4 +23,6 @@ public function getKolomTabel(){
     return $kolom_tabel;
 }
 
+
+
 }
