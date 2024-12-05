@@ -40,7 +40,7 @@
                 <tr>
                     <th scope="row">#0001</th>
                     <td>
-                        <img src="<?=base_url()+'images/1.jpg'?>" alt="" style="width: 150px; height: auto;">
+                        <img src="<?=base_url().'images/1.jpg'?>" alt="" style="width: 150px; height: auto;">
                         <h5>Pulang - Karima Ifha</h5>
                     </td>
                     <td>1</td>
@@ -57,6 +57,10 @@
     <div calss="">
         <h2 class ="text-secondary">Total Bayar</h2>
         <h2>Rp100,000</h2>
+        <div class="mt-5">
+            <button class="btn btn-primary">Chekout</button>
+
+        </div>
     </div>
 
 </div>
