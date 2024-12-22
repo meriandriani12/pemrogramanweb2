@@ -1,6 +1,7 @@
-<?= $this->extends('layout');?>
+<?= $this->extend('layout');?>
 
-<?= $this->section('main')?>
+<?= $this->section('main') ?> 
+
 <div class="container">
     <div class="row bg-primary-subtle">
         <div class="col-6 p-5">
@@ -10,7 +11,7 @@
         </div>
         <div class="col-6 p-5">
             <h1>Temukan Buku Favorit Anda</h1>
-            <form action="">
+            <form action="<? base_url('search') ?>" method="GET">
                 <div class="mb-3">
                     <input type="text" name="judul" id="judul" class="form-control" placeholder="Judul Buku">
                 </div>
@@ -34,9 +35,9 @@
             <div class="row d-flex flex-wrap justify-content-center">
                 <div class="col-4 mb-4 d-flex justify-content-center">
                     <div class="card" style="width: 15rem;">
-                        <img src="<?= base_url() ?>/images/1.jpg" class="card-img-top" alt="...">
+                        <img src="<?= base_url() ?>/image/1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Pulang</h5>
+                            <h5 class="card-title">Si Anak Pintar</h5>
                             <p class="card-text">Rp. 100.000</p>
                             <a href="#" class="btn btn-primary">Add To Cart</a>
                         </div>
@@ -44,9 +45,9 @@
                 </div>
                 <div class="col-4 mb-4 d-flex justify-content-center">
                     <div class="card" style="width: 15rem;">
-                        <img src="<?= base_url() ?>/images/2.jpg" class="card-img-top" alt="...">
+                        <img src="<?= base_url() ?>/image/2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Laskar Pelangi</h5>
+                            <h5 class="card-title">172 days</h5>
                             <p class="card-text">Rp. 150.000</p>
                             <a href="#" class="btn btn-primary">Add To Cart</a>
                         </div>
@@ -54,19 +55,19 @@
                 </div>
                 <div class="col-4 mb-4 d-flex justify-content-center">
                     <div class="card" style="width: 15rem;">
-                        <img src="<?= base_url() ?>/images/3.jpg" class="card-img-top" alt="...">
+                        <img src="<?= base_url() ?>/image/3.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Angkasa</h5>
-                            <p class="card-text">Rp. 200.000</p>
+                            <h5 class="card-title">Selalu Ada Ruang Untuk Pulang</h5>
+                            <p class="card-text">Rp. 145.000</p>
                             <a href="#" class="btn btn-primary">Add To Cart</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-4 mb-4 d-flex justify-content-center">
                     <div class="card" style="width: 15rem;">
-                        <img src="<?= base_url() ?>/images/4.jpg" class="card-img-top" alt="...">
+                        <img src="<?= base_url() ?>/image/4.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Wujud Tanpa Suara</h5>
+                            <h5 class="card-title">Segala Yang Diisap Langit</h5>
                             <p class="card-text">Rp. 90.000</p>
                             <a href="#" class="btn btn-primary">Add To Cart</a>
                         </div>
@@ -74,9 +75,9 @@
                 </div>
                 <div class="col-4 mb-4 d-flex justify-content-center">
                     <div class="card" style="width: 15rem;">
-                        <img src="<?= base_url() ?>/images/5.jpg" class="card-img-top" alt="...">
+                        <img src="<?= base_url() ?>/image/5.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Hyderabad</h5>
+                            <h5 class="card-title">Pupper Umbrella</h5>
                             <p class="card-text">Rp. 120.000</p>
                             <a href="#" class="btn btn-primary">Add To Cart</a>
                         </div>
@@ -84,9 +85,9 @@
                 </div>
                 <div class="col-4 mb-4 d-flex justify-content-center">
                     <div class="card" style="width: 15rem;">
-                        <img src="<?= base_url() ?>/images/6.jpg" class="card-img-top" alt="...">
+                        <img src="<?= base_url() ?>/image/6.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Dear, Hyun Nam</h5>
+                            <h5 class="card-title">Angkasa dan 56 Hari</h5>
                             <p class="card-text">Rp. 150.000</p>
                             <a href="#" class="btn btn-primary">Add To Cart</a>
                         </div>
@@ -96,6 +97,4 @@
         </div>
     </div>
 </div>
-
-<?= $this->endSection();?>
-
+<?= $this->endSection()?>

@@ -7,118 +7,52 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
   <body>
-    <!-- As a link -->
-     <nav class="navbar navbar-light bg-light mb-3">
-     <div class="container">
-     <a class="navbar-brand" href="#">Toko Buku Online</a>
-     <a href="<?=base_url('chart')?>" class = "btn btn-secondary position-relative">
-        Chart
-     <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-    99+
-    <span class="visually-hidden">unread messages</span>
-  </span>
-</a>
-  </div>
-</nav>
-<div class="container">
-    <div class="row bg-primary-subtle">
-        <div class="col-6 p-5">
-            <h1>Selamat Datang Ditoko Buku Online</h1>
-            <p>Kami Menyediakan Berbagai Macam Buku Dari Beberapa Penerbit Terkenal</p>
-            <button class="btn btn-warning">Lihat Kontak</button>
-        </div>
-        <div class="col-6 p-5">
-            <h1>Temukan Buku Favorit Anda</h1>
-            <form action="">
-                <div class="mb-3">
-                    <input type="text" name="judul" id="judul" class="form-control" placeholder="Judul Buku">
-                </div>
-                <div class="mb-3">
-                    <select name="kategori" id="kategori" class="form-control">
-                        <option value="">-- Pilih Kategori --</option>
-                    </select>
-                </div>
-                <div class="mb-3">
-                    <input type="text" name="pengarang" id="pengarang" placeholder="Pengarang" class="form-control">
-                </div>
-                <div class="mb-3">
-                    <button class="btn btn-primary">Cari</button>
-                </div>
-            </form>
-        </div>
-    </div>
-    <div class="row mt-5">
-        <div class="col-12">
-            <h2 class="mb-3">Buku Best Seller</h2>
-            <div class="row d-flex flex-wrap justify-content-center">
-                <div class="col-4 mb-4 d-flex justify-content-center">
-                    <div class="card" style="width: 15rem;">
-                        <img src="<?= base_url() ?>/images/1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Pulang</h5>
-                            <p class="card-text">Rp. 100.000</p>
-                            <a href="#" class="btn btn-primary">Add To Cart</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 mb-4 d-flex justify-content-center">
-                    <div class="card" style="width: 15rem;">
-                        <img src="<?= base_url() ?>/images/2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Laskar Pelangi</h5>
-                            <p class="card-text">Rp. 150.000</p>
-                            <a href="#" class="btn btn-primary">Add To Cart</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 mb-4 d-flex justify-content-center">
-                    <div class="card" style="width: 15rem;">
-                        <img src="<?= base_url() ?>/images/3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Angkasa</h5>
-                            <p class="card-text">Rp. 200.000</p>
-                            <a href="#" class="btn btn-primary">Add To Cart</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 mb-4 d-flex justify-content-center">
-                    <div class="card" style="width: 15rem;">
-                        <img src="<?= base_url() ?>/images/4.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Wujud Tanpa Suara</h5>
-                            <p class="card-text">Rp. 90.000</p>
-                            <a href="#" class="btn btn-primary">Add To Cart</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 mb-4 d-flex justify-content-center">
-                    <div class="card" style="width: 15rem;">
-                        <img src="<?= base_url() ?>/images/5.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Hyderabad</h5>
-                            <p class="card-text">Rp. 120.000</p>
-                            <a href="#" class="btn btn-primary">Add To Cart</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 mb-4 d-flex justify-content-center">
-                    <div class="card" style="width: 15rem;">
-                        <img src="<?= base_url() ?>/images/6.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Dear, Hyun Nam</h5>
-                            <p class="card-text">Rp. 150.000</p>
-                            <a href="#" class="btn btn-primary">Add To Cart</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<footer class="p-5 bg-danger-subtle mt-5 text-center">
-    &copy; 2024. Kelas A Pemrograman Web2. All Rights Reserved
-</footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- Navbar -->
+  <nav class="navbar bg-body-tertiary bg-light mb-3">
+    <div class="container">
+      <a class="navbar-brand" href="<?=base_url()?>">Toko Buku Online</a>
+      <button class="btn btn-primary d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+      </button>
+      <a href="<?= base_url('chart')?>" class="btn btn-secondary position-relative">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+          <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0M9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0"/>
+        </svg>
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+          99+
+          <span class="visually-hidden">unread messages</span>
+        </span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-md-3">
+        <div class="collapse d-md-block" id="sidebarMenu">
+          <div class="list-group">
+            <a href="<?=base_url('dashboard')?>" class="list-group-item list-group-item-action active">Dashboard</a>
+            <a href="<?=base_url('databuku')?>" class="list-group-item list-group-item-action">Data Buku</a>
+            <a href="<?=base_url('transaksi')?>" class="list-group-item list-group-item-action">Transaksi</a>
+            <a href="<?=base_url('admin/pelanggan')?>" class="list-group-item list-group-item-action">Pelanggan</a>
+          </div>
+        </div>
+      </div>
+      <!-- Main Section -->
+      <div class="col-md-9">
+        <?= $this->renderSection('main');?>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="p-5 bg-danger-subtle mt-5 text-center">
+    &copy; 2024. Kelas A Pemrograman Web2. All Rights Reserved
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
